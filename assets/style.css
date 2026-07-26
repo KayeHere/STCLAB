@@ -202,6 +202,31 @@ ul.topics li::before {
   background: var(--red);
 }
 
+ul.names {
+  list-style: none;
+  margin: 16px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 10px 24px;
+}
+
+ul.names li {
+  position: relative;
+  padding-left: 16px;
+}
+
+ul.names li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--red);
+}
+
 /* ---------- person ---------- */
 
 .person {
