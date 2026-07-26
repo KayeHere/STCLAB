@@ -36,6 +36,9 @@
   --mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
   --slate: #98a0ae;
   --slate2: #4f5766;
+  --tk1: #a6192e;
+  --tk2: #0072b2;
+  --tk3: #b26b00;
   --red: #a6192e;
   --red-dark: #7d1322;
   --ink: #1a1a1a;
@@ -51,6 +54,9 @@
   :root {
     --slate: #6d7686;
     --slate2: #aab3c2;
+  --tk1: #d94a62;
+    --tk2: #3a97ce;
+    --tk3: #b8842a;
     --red: #ef6076;
     --red-dark: #ff8b9b;
     --ink: #e9eaee;
@@ -233,9 +239,34 @@ nav a.active {
   stroke: none;
 }
 
-.wavefig .t1 { fill: var(--red);    fill-opacity: 0.62; }
-.wavefig .t2 { fill: var(--slate);  fill-opacity: 0.62; }
-.wavefig .t3 { fill: var(--slate2); fill-opacity: 0.62; }
+.wavefig .t1 { fill: var(--tk1); fill-opacity: 0.62; }
+.wavefig .t2 { fill: var(--tk2); fill-opacity: 0.62; }
+.wavefig .t3 { fill: var(--tk3); fill-opacity: 0.62; }
+
+.legend {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px 24px;
+  margin: 13px 0 0;
+  padding: 0;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+.legend li { display: flex; align-items: center; gap: 8px; }
+
+.legend i {
+  width: 13px;
+  height: 13px;
+  border-radius: 3px;
+  flex: none;
+}
+
+.legend .sw1 { background: var(--tk1); }
+.legend .sw2 { background: var(--tk2); }
+.legend .sw3 { background: var(--tk3); }
 
 .wavefig .reveal-rect {
   transform-box: view-box;
