@@ -118,6 +118,15 @@ h3 {
   margin: 28px 0 8px;
 }
 
+h2.topic {
+  font-size: 1.9rem;
+  margin-top: 56px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--red);
+}
+
+h2.topic + h3 { margin-top: 20px; }
+
 p { max-width: 70ch; }
 
 a { color: var(--red); }
@@ -164,6 +173,33 @@ a:hover { color: var(--red-dark); }
   margin-bottom: 0;
   color: var(--muted);
   font-size: 0.97rem;
+}
+
+ul.topics {
+  margin: 14px 0 0;
+  padding: 14px 0 0 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+  font-size: 0.92rem;
+}
+
+ul.topics li {
+  padding-left: 16px;
+  margin-bottom: 6px;
+  position: relative;
+}
+
+ul.topics li:last-child { margin-bottom: 0; }
+
+ul.topics li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--red);
 }
 
 /* ---------- person ---------- */
