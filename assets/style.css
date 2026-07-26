@@ -342,6 +342,21 @@ nav a.active {
 
 .subfig figcaption em { font-style: normal; opacity: 0.75; }
 
+.subfig figcaption a {
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+}
+
+.subfig figcaption a:hover { color: var(--red); border-bottom-color: var(--red); }
+
+.subfig .fx-sub {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  letter-spacing: 0.05em;
+  fill: var(--tk1);
+}
+
 .subfig .fx-t {
   font-family: var(--mono);
   font-size: 12px;
@@ -366,6 +381,7 @@ nav a.active {
 .fx-arc   { stroke: var(--line); stroke-width: 1.4; stroke-dasharray: 4 5; }
 .fx-ray   { stroke: var(--line); stroke-width: 1.2; }
 .fx-arrow { stroke: var(--muted); stroke-width: 1.4; }
+.fx-dash  { stroke: var(--tk2); stroke-width: 1.4; stroke-dasharray: 5 4; }
 .fx-arrowhead { fill: var(--muted); stroke: none; }
 
 .fx-box       { stroke: var(--line); stroke-width: 1.4; fill: var(--bg); }
