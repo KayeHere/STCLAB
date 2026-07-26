@@ -312,9 +312,10 @@ nav a.active {
 
 .method-figs {
   display: grid;
-  grid-template-columns: 1fr 1fr;   /* always two across */
+  /* five methods: three across, then two — drops to 2 then 1 as width allows */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 16px;
-  max-width: 46ch;
+  max-width: 70ch;
   margin: 24px 0 8px;
 }
 

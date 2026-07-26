@@ -1,0 +1,22 @@
+<svg viewBox="0 0 360 220" xmlns="http://www.w3.org/2000/svg" role="img"
+        aria-label="A listener at a standardized cognitive test: a digit span of four items, and the resulting score placed against a normal distribution.">
+        <g fill="none" stroke="var(--fig-line, #98a0ae)" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M 88.00 50.00 C 107.00 49.62 120.68 58.36 121.82 73.56 C 122.20 78.12 121.44 81.54 123.34 84.58 C 127.14 89.14 130.56 91.04 129.80 94.84 C 129.04 97.50 125.24 96.74 122.20 98.26 C 124.48 101.30 123.72 103.96 120.68 105.86 C 119.54 110.80 115.36 114.60 107.76 116.88 C 98.64 119.54 75.08 118.40 61.40 107.00 C 51.52 97.88 50.00 71.28 65.20 58.36 C 72.80 51.90 80.02 50.00 88.00 50.00 Z"/>
+        <path d="M 76.60 116.12 C 75.08 126.76 72.04 132.84 65.20 138.92 C 44.30 150.32 29.10 198.00 26.44 220.00 M 103.20 116.12 C 104.72 127.52 107.00 133.60 113.08 138.92 C 129.80 148.80 135.88 194.00 136.64 220.00"/>
+        </g>
+        <g fill="none" stroke="var(--fig-line, #98a0ae)" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="168" y="42" width="180" height="150" rx="5" fill="var(--fig-soft, #f7f7f8)"/>
+        </g>
+        <g fill="none" stroke="var(--fig-line, #98a0ae)" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="184" y="60" width="24" height="22" rx="4"/><rect x="216" y="60" width="24" height="22" rx="4"/><rect x="248" y="60" width="24" height="22" rx="4"/><rect x="280" y="60" width="24" height="22" rx="4"/><rect x="312" y="60" width="24" height="22" rx="4"/>
+        <path d="M 184 92 L 184 98 L 272 98 L 272 92"/>
+        </g>
+        <g fill="none" stroke="var(--fig-line, #98a0ae)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M 180.00 176.16 L 183.25 175.58 L 186.50 174.85 L 189.75 173.94 L 193.00 172.84 L 196.25 171.51 L 199.50 169.93 L 202.75 168.09 L 206.00 165.98 L 209.25 163.58 L 212.50 160.90 L 215.75 157.97 L 219.00 154.80 L 222.25 151.45 L 225.50 147.97 L 228.75 144.43 L 232.00 140.91 L 235.25 137.49 L 238.50 134.28 L 241.75 131.37 L 245.00 128.84 L 248.25 126.78 L 251.50 125.25 L 254.75 124.32 L 258.00 124.00 L 261.25 124.32 L 264.50 125.25 L 267.75 126.78 L 271.00 128.84 L 274.25 131.37 L 277.50 134.28 L 280.75 137.49 L 284.00 140.91 L 287.25 144.43 L 290.50 147.97 L 293.75 151.45 L 297.00 154.80 L 300.25 157.97 L 303.50 160.90 L 306.75 163.58 L 310.00 165.98 L 313.25 168.09 L 316.50 169.93 L 319.75 171.51 L 323.00 172.84 L 326.25 173.94 L 329.50 174.85 L 332.75 175.58 L 336.00 176.16"/>
+        <path d="M 180 178 L 336 178"/>
+        </g>
+        <g fill="none" stroke="var(--fig-sig, #a6192e)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M 288.00 178.00 L 288.00 145.25"/>
+        </g>
+        <circle cx="288" cy="145.25" r="3.6" fill="var(--fig-sig, #a6192e)"/>
+        </svg>

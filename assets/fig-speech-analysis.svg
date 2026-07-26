@@ -1,0 +1,17 @@
+<svg viewBox="0 0 360 220" xmlns="http://www.w3.org/2000/svg" role="img"
+        aria-label="A recorded speech waveform with two pauses, analysed into an acoustic pitch contour and a set of linguistic word tokens.">
+        <g fill="none" stroke="var(--fig-sig, #a6192e)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M 24.00 72.01 L 28.46 64.04 L 32.91 58.57 L 37.37 57.26 L 41.83 59.40 L 46.29 62.73 L 50.74 64.94 L 55.20 65.03 L 59.66 63.54 L 64.11 61.79 L 68.57 60.79 L 73.03 60.60 L 77.49 60.59 L 81.94 60.28 L 86.40 59.91 L 90.86 60.41 L 95.31 62.46 L 99.77 65.67 L 104.23 68.43 L 108.69 68.75 L 113.14 65.64 M 144.34 67.94 L 148.80 66.59 L 153.26 61.76 L 157.71 56.04 L 162.17 52.11 L 166.63 51.10 L 171.09 52.20 L 175.54 53.59 L 180.00 54.05 L 184.46 53.92 L 188.91 54.98 L 193.37 58.98 L 197.83 66.10 L 202.29 74.39 L 206.74 80.55 L 211.20 81.82 L 215.66 77.62 L 220.11 69.95 M 246.86 65.17 L 251.31 64.76 L 255.77 63.07 L 260.23 61.45 L 264.69 60.69 L 269.14 60.61 L 273.60 60.55 L 278.06 60.16 L 282.51 59.92 L 286.97 60.77 L 291.43 63.20 L 295.89 66.49 L 300.34 68.81 L 304.80 68.29 L 309.26 64.39 L 313.71 58.51 L 318.17 53.52 L 322.63 52.08 L 327.09 55.03 L 331.54 60.75 L 336.00 66.06"/>
+        </g>
+        <g fill="none" stroke="var(--fig-line, #98a0ae)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M 24 100 L 336 100"/>
+        <path d="M 180 112 L 180 194"/>
+        </g>
+        <g fill="none" stroke="var(--fig-line, #98a0ae)" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M 24 158 C 44 132 62 128 78 140 C 94 152 110 156 128 138 C 142 124 158 126 170 136"/>
+        <path d="M 24 178 L 62 178 M 82 178 L 122 178 M 142 178 L 170 178"/>
+        </g>
+        <g fill="var(--fig-soft, #f7f7f8)" stroke="var(--fig-line, #98a0ae)" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="196" y="128" width="44" height="9" rx="4.5"/><rect x="248" y="128" width="30" height="9" rx="4.5"/><rect x="286" y="128" width="50" height="9" rx="4.5"/><rect x="196" y="150" width="34" height="9" rx="4.5"/><rect x="238" y="150" width="52" height="9" rx="4.5"/><rect x="298" y="150" width="38" height="9" rx="4.5"/><rect x="196" y="172" width="46" height="9" rx="4.5"/><rect x="250" y="172" width="28" height="9" rx="4.5"/>
+        </g>
+        </svg>
