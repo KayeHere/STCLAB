@@ -31,42 +31,26 @@
 }
 
 :root {
+  color-scheme: dark;
   --display: 'IBM Plex Serif', Georgia, 'Times New Roman', serif;
   --body: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
   --mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
-  --slate: #98a0ae;
-  --slate2: #4f5766;
-  --tk1: #a6192e;
-  --tk2: #0072b2;
-  --tk3: #b26b00;
-  --red: #a6192e;
-  --red-dark: #7d1322;
-  --ink: #1a1a1a;
-  --muted: #5c5f66;
-  --line: #e2e2e5;
-  --bg: #ffffff;
-  --bg-soft: #f7f7f8;
-  --btn-fg: #ffffff;
+  --slate: #6d7686;
+  --slate2: #aab3c2;
+  --tk1: #d94a62;
+  --tk2: #3a97ce;
+  --tk3: #b8842a;
+  --red: #ef6076;
+  --red-dark: #ff8b9b;
+  --ink: #e9eaee;
+  --muted: #a3a8b2;
+  --line: #333740;
+  --bg: #15171b;
+  --bg-soft: #1d2026;
+  --btn-fg: #15171b;
   --max: 1080px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --slate: #6d7686;
-    --slate2: #aab3c2;
-    --tk1: #d94a62;
-    --tk2: #3a97ce;
-    --tk3: #b8842a;
-    --red: #ef6076;
-    --red-dark: #ff8b9b;
-    --ink: #e9eaee;
-    --muted: #a3a8b2;
-    --line: #333740;
-    --bg: #15171b;
-    --bg-soft: #1d2026;
-    --btn-fg: #15171b;
-  }
-}
 
 * { box-sizing: border-box; }
 
@@ -417,6 +401,47 @@ nav a.active {
 
 .fx-box       { stroke: var(--line); stroke-width: 1.4; fill: var(--bg); }
 .fx-box-blue  { stroke: var(--tk2); }
+
+/* anatomy: lobed brain, gyri, and the receptor markers drawn on it */
+.fx-lobe {
+  stroke: var(--ink);
+  stroke-width: 2.2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.fx-lobe-f { fill: var(--lobe-f); }
+.fx-lobe-p { fill: var(--lobe-p); }
+.fx-lobe-t { fill: var(--lobe-t); }
+.fx-lobe-o { fill: var(--lobe-o); }
+.fx-pale   { fill: var(--lobe-x); }
+
+.fx-gyrus {
+  stroke: var(--ink);
+  stroke-width: 1.1;
+  opacity: 0.5;
+  fill: none;
+  stroke-linecap: round;
+}
+
+.fx-lead     { stroke: var(--slate); stroke-width: 1; opacity: 0.75; fill: none; }
+.fx-dot-blue { fill: var(--tk2); stroke: none; }
+.fx-site     { stroke: var(--bg); stroke-width: 1.4; }   /* keeps markers legible on any lobe */
+
+.fx-ac {
+  stroke: var(--tk1);
+  stroke-width: 8;
+  stroke-linecap: round;
+  fill: none;
+}
+
+.fx-cochlea {
+  stroke: var(--tk1);
+  stroke-width: 1.8;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
 
 /* ---------- generic sections ---------- */
 
