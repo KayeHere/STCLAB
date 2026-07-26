@@ -554,6 +554,21 @@ ul.topics li {
 
 ul.topics li:last-child { margin-bottom: 0; }
 
+ul.topics a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+ul.topics a:hover {
+  color: var(--red);
+  border-bottom-color: var(--red);
+}
+
+/* keep an anchored heading clear of the top edge */
+h3[id] { scroll-margin-top: 24px; }
+
 ul.topics li::before {
   content: "";
   position: absolute;
