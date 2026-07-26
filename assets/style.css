@@ -142,8 +142,17 @@ body {
 }
 
 .brand {
+  display: flex;
+  align-items: center;
+  gap: 13px;
   text-decoration: none;
   color: var(--ink);
+}
+
+.brand-mark img {
+  display: block;
+  height: 30px;
+  width: auto;
 }
 
 .brand strong {
@@ -154,7 +163,7 @@ body {
   letter-spacing: -0.01em;
 }
 
-.brand span {
+.brand .affil {
   display: block;
   font-family: var(--mono);
   font-size: 0.72rem;
