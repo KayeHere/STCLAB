@@ -69,11 +69,63 @@
       <a href="https://docs.google.com/forms/d/e/1FAIpQLScozNnXqbq5Emfn6Gqv_De3HaVmjEaIswr9ASzSwLGyNNGgsA/viewform">open the form in a new tab</a>.
     </p>
 
-    <div class="gform-wrap">
-      <iframe class="gform"
-              src="https://docs.google.com/forms/d/e/1FAIpQLScozNnXqbq5Emfn6Gqv_De3HaVmjEaIswr9ASzSwLGyNNGgsA/viewform?embedded=true"
-              title="Lab Membership Interest Form"
-              loading="lazy">Loading the form&hellip;</iframe>
+    <form id="join-form" class="form" action="https://docs.google.com/forms/d/e/1FAIpQLScozNnXqbq5Emfn6Gqv_De3HaVmjEaIswr9ASzSwLGyNNGgsA/formResponse" method="post" target="hidden-sink">
+      <div class="field">
+        <label for="j-email">Email <span class="req">*</span></label>
+        <input id="j-email" name="emailAddress" type="email" required autocomplete="email">
+      </div>
+      <div class="field">
+        <label for="j-name">Full name</label>
+        <input id="j-name" name="entry.422553898" type="text" autocomplete="name">
+      </div>
+      <div class="field">
+        <label for="j-major">Academic major</label>
+        <input id="j-major" name="entry.1479194668" type="text">
+      </div>
+
+      <fieldset class="field field-wide">
+        <legend>Which research areas interest you most?</legend>
+          <label class="choice"><input type="checkbox" name="entry.1189613284" value="Data Analysis"> Data Analysis</label>
+          <label class="choice"><input type="checkbox" name="entry.1189613284" value="Experimental Design"> Experimental Design</label>
+          <label class="choice"><input type="checkbox" name="entry.1189613284" value="Literature Review"> Literature Review</label>
+          <label class="choice"><input type="checkbox" name="entry.1189613284" value="Field Data Collection"> Field Data Collection</label>
+          <label class="choice"><input type="checkbox" name="entry.1189613284" value="Software Development"> Software Development</label>
+      </fieldset>
+
+      <fieldset class="field field-wide">
+        <legend>What is your weekly availability for lab work?</legend>
+          <table class="grid">
+            <tr><td></td><th scope="col">Fall 2026 Semester</th><th scope="col">Spring 2027 Semester</th></tr>
+            <tr><th scope="row">0-5 hours</th><td><label><span class="sr-only">0-5 hours, Fall 2026 Semester</span><input type="radio" name="entry.463801256" value="Fall 2026 Semester"></label></td><td><label><span class="sr-only">0-5 hours, Spring 2027 Semester</span><input type="radio" name="entry.463801256" value="Spring 2027 Semester"></label></td></tr>
+            <tr><th scope="row">6-10 hours</th><td><label><span class="sr-only">6-10 hours, Fall 2026 Semester</span><input type="radio" name="entry.1094951245" value="Fall 2026 Semester"></label></td><td><label><span class="sr-only">6-10 hours, Spring 2027 Semester</span><input type="radio" name="entry.1094951245" value="Spring 2027 Semester"></label></td></tr>
+            <tr><th scope="row">10+ hours</th><td><label><span class="sr-only">10+ hours, Fall 2026 Semester</span><input type="radio" name="entry.454601482" value="Fall 2026 Semester"></label></td><td><label><span class="sr-only">10+ hours, Spring 2027 Semester</span><input type="radio" name="entry.454601482" value="Spring 2027 Semester"></label></td></tr>
+          </table>
+      </fieldset>
+
+      <fieldset class="field field-wide">
+        <legend>What is your level of previous research experience?</legend>
+          <label class="choice"><input type="radio" name="entry.328946566" value="No previous experience"> No previous experience</label>
+          <label class="choice"><input type="radio" name="entry.328946566" value="Completed relevant coursework"> Completed relevant coursework</label>
+          <label class="choice"><input type="radio" name="entry.328946566" value="Previous lab assistant role"> Previous lab assistant role</label>
+          <label class="choice"><input type="radio" name="entry.328946566" value="Independent research project"> Independent research project</label>
+      </fieldset>
+
+      <div class="field field-wide">
+        <label for="j-why">Why are you interested in joining our lab?</label>
+        <textarea id="j-why" name="entry.848499340" rows="5"></textarea>
+      </div>
+
+      <div class="field-wide">
+        <button class="btn" type="submit">Send to the lab</button>
+      </div>
+    </form>
+
+    <iframe name="hidden-sink" class="sink" title="Form submission target" aria-hidden="true" tabindex="-1"></iframe>
+
+    <div id="join-thanks" class="form-thanks" hidden>
+      <p><strong>Thank you &mdash; your details are with us.</strong> Dr.&nbsp;Wang will be
+      in touch. If you would rather send anything else, email
+      <a href="mailto:kwang5@sdsu.edu">kwang5@sdsu.edu</a>.</p>
     </div>
 
     <p>
@@ -96,5 +148,20 @@
   </div>
 </footer>
 
+<script>
+(function () {
+  var form = document.getElementById('join-form');
+  var thanks = document.getElementById('join-thanks');
+  form.addEventListener('submit', function () {
+    // the POST lands in the hidden iframe; swap in the confirmation
+    setTimeout(function () {
+      form.hidden = true;
+      thanks.hidden = false;
+      thanks.setAttribute('tabindex', '-1');
+      thanks.focus();
+    }, 400);
+  });
+})();
+</script>
 </body>
 </html>
