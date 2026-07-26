@@ -20,19 +20,11 @@ files directly.
 To preview a change, open the `.html` file in a browser. What you see locally is
 what gets published.
 
-### Adding a photo
+### Replacing the PI photo
 
-Save the image as `assets/pi.jpg`, then in `index.html` and `people.html` replace
-
-```html
-<div class="photo-placeholder">Photo coming soon</div>
-```
-
-with
-
-```html
-<img src="assets/pi.jpg" alt="Xianhui (Kaye) Wang">
-```
+Overwrite `assets/pi.jpg` with a new image. It is displayed as a 180 px square, so
+crop it square first — roughly 600 × 600 keeps it sharp on high-resolution screens.
+Both `index.html` and `people.html` point at the same file, so one swap updates both.
 
 ### Adding a lab member
 
