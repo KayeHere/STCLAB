@@ -515,6 +515,103 @@ a:hover { color: var(--red-dark); }
 
 .btn:hover { background: var(--red-dark); color: var(--btn-fg); }
 
+/* ---------- interest form ---------- */
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 20px;
+  max-width: 62ch;
+  margin: 24px 0 4px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.field-wide { grid-column: 1 / -1; }
+
+.form label {
+  font-family: var(--mono);
+  font-size: 0.71rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.form input,
+.form select,
+.form textarea {
+  font-family: var(--body);
+  font-size: 1rem;
+  color: var(--ink);
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 10px 12px;
+  width: 100%;
+}
+
+.form textarea { resize: vertical; line-height: 1.55; }
+
+.form input:hover,
+.form select:hover,
+.form textarea:hover { border-color: var(--slate); }
+
+.field-hint {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+button.btn {
+  border: none;
+  cursor: pointer;
+  font-family: var(--body);
+}
+
+.btn-quiet {
+  background: transparent;
+  color: var(--red);
+  border: 1px solid var(--line);
+}
+
+.btn-quiet:hover {
+  background: transparent;
+  color: var(--red-dark);
+  border-color: var(--red);
+}
+
+.form-fallback {
+  border: 1px solid var(--line);
+  background: var(--bg-soft);
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin: 22px 0 8px;
+  max-width: 62ch;
+}
+
+.form-fallback p { margin: 0 0 4px; }
+
+.form-fallback pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 12px 14px;
+  margin: 12px 0;
+}
+
+@media (max-width: 640px) {
+  .form { grid-template-columns: 1fr; }
+}
+
 /* ---------- cards ---------- */
 
 .cards {
