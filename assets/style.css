@@ -323,15 +323,23 @@ nav a.active {
 
 .method-figs {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(248px, 1fr));
-  gap: 20px;
-  max-width: 68ch;
+  grid-template-columns: 1fr 1fr;   /* always two across */
+  gap: 16px;
+  max-width: 46ch;
   margin: 24px 0 8px;
 }
 
 .method-figs .subfig {
   margin: 0;
   max-width: none;
+  padding: 14px 14px 11px;
+}
+
+.method-figs figcaption {
+  margin-top: 9px;
+  padding-top: 9px;
+  font-size: 0.66rem;
+  line-height: 1.6;
 }
 
 .method-figs figcaption b {
