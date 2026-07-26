@@ -6,10 +6,61 @@
   --line: #e2e2e5;
   --bg: #ffffff;
   --bg-soft: #f7f7f8;
+  --btn-fg: #ffffff;
   --max: 1080px;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --red: #ef6076;
+    --red-dark: #ff8b9b;
+    --ink: #e9eaee;
+    --muted: #a3a8b2;
+    --line: #333740;
+    --bg: #15171b;
+    --bg-soft: #1d2026;
+    --btn-fg: #15171b;
+  }
+}
+
 * { box-sizing: border-box; }
+
+/* ---------- accessibility ---------- */
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  background: var(--red);
+  color: var(--btn-fg);
+  padding: 10px 18px;
+  border-radius: 0 0 4px 0;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  left: 0;
+  color: var(--btn-fg);
+}
+
+:focus-visible {
+  outline: 3px solid var(--red);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
 
 body {
   margin: 0;
@@ -67,6 +118,7 @@ nav a {
   text-decoration: none;
   font-size: 0.95rem;
   margin-left: 22px;
+  transition: color 0.15s ease;
 }
 
 nav a:hover { color: var(--red); }
@@ -103,6 +155,12 @@ nav a.active {
 /* ---------- generic sections ---------- */
 
 main { padding: 56px 0 72px; }
+
+main h1 {
+  font-size: 1.5rem;
+  letter-spacing: -0.01em;
+  margin: 0 0 16px;
+}
 
 h2 {
   font-size: 1.5rem;
@@ -142,15 +200,16 @@ a:hover { color: var(--red-dark); }
 .btn {
   display: inline-block;
   background: var(--red);
-  color: #fff;
+  color: var(--btn-fg);
   text-decoration: none;
   padding: 11px 22px;
   border-radius: 4px;
   font-size: 0.95rem;
   font-weight: 500;
+  transition: background-color 0.15s ease;
 }
 
-.btn:hover { background: var(--red-dark); color: #fff; }
+.btn:hover { background: var(--red-dark); color: var(--btn-fg); }
 
 /* ---------- cards ---------- */
 

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="STC Lab">
+  <rect width="64" height="64" rx="13" fill="#a6192e"/>
+  <g fill="#ffffff">
+    <rect x="13" y="26" width="7" height="12" rx="3.5"/>
+    <rect x="24" y="16" width="7" height="32" rx="3.5"/>
+    <rect x="35" y="21" width="7" height="22" rx="3.5"/>
+    <rect x="46" y="29" width="7" height="6" rx="3"/>
+  </g>
+</svg>
