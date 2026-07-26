@@ -84,52 +84,16 @@
 
     <h2>Tell us about yourself</h2>
     <p class="lede">
-      If you would like to join the lab, fill this in. It opens your own email app with
-      the details laid out, addressed to Dr.&nbsp;Wang &mdash; nothing is sent until you
-      press send there.
+      If you would like to join the lab, fill in the form below. It goes straight to
+      Dr.&nbsp;Wang. You can also
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScozNnXqbq5Emfn6Gqv_De3HaVmjEaIswr9ASzSwLGyNNGgsA/viewform">open it in a new tab</a>.
     </p>
 
-    <form id="interest-form" class="form">
-      <div class="field">
-        <label for="f-name">Full name</label>
-        <input id="f-name" type="text" required autocomplete="name">
-      </div>
-      <div class="field">
-        <label for="f-email">Email address</label>
-        <input id="f-email" type="email" required autocomplete="email">
-      </div>
-      <div class="field">
-        <label for="f-major">Major</label>
-        <input id="f-major" type="text" required>
-      </div>
-      <div class="field">
-        <label for="f-year">School year</label>
-        <select id="f-year" required>
-          <option value="">Choose one</option>
-          <option>First year</option>
-          <option>Sophomore</option>
-          <option>Junior</option>
-          <option>Senior</option>
-          <option>Master&rsquo;s student</option>
-          <option>Doctoral student</option>
-          <option>Other</option>
-        </select>
-      </div>
-      <div class="field field-wide">
-        <label for="f-interest">Research interest</label>
-        <textarea id="f-interest" rows="5" required></textarea>
-        <span class="field-hint">What draws you to this work, and any research experience you already have.</span>
-      </div>
-      <div class="field-wide">
-        <button class="btn" type="submit">Open email to send</button>
-      </div>
-    </form>
-
-    <div id="form-fallback" class="form-fallback" hidden>
-      <p><strong>Email app didn&rsquo;t open?</strong> Copy the message below and send it to
-      <a href="mailto:kwang5@sdsu.edu">kwang5@sdsu.edu</a> yourself.</p>
-      <pre id="form-text"></pre>
-      <p><button class="btn btn-quiet" type="button" id="copy-btn">Copy message</button></p>
+    <div class="gform-wrap">
+      <iframe class="gform"
+              src="https://docs.google.com/forms/d/e/1FAIpQLScozNnXqbq5Emfn6Gqv_De3HaVmjEaIswr9ASzSwLGyNNGgsA/viewform?embedded=true"
+              title="Lab Membership Interest Form"
+              loading="lazy">Loading the form&hellip;</iframe>
     </div>
 
     <h2>Get in touch</h2>
@@ -159,41 +123,5 @@
   </div>
 </footer>
 
-<script>
-(function () {
-  var form = document.getElementById('interest-form');
-  var fallback = document.getElementById('form-fallback');
-  var textEl = document.getElementById('form-text');
-  var copyBtn = document.getElementById('copy-btn');
-  var val = function (id) { return document.getElementById(id).value.trim(); };
-
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    var name = val('f-name');
-    var body = [
-      'Name: ' + name,
-      'Email: ' + val('f-email'),
-      'Major: ' + val('f-major'),
-      'School year: ' + val('f-year'),
-      '',
-      'Research interest:',
-      val('f-interest')
-    ].join('\n');
-    var subject = 'STC Lab: interest from ' + name;
-
-    textEl.textContent = 'To: kwang5@sdsu.edu\nSubject: ' + subject + '\n\n' + body;
-    fallback.hidden = false;
-    window.location.href = 'mailto:kwang5@sdsu.edu?subject='
-      + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-  });
-
-  copyBtn.addEventListener('click', function () {
-    navigator.clipboard.writeText(textEl.textContent).then(function () {
-      copyBtn.textContent = 'Copied';
-      setTimeout(function () { copyBtn.textContent = 'Copy message'; }, 2000);
-    });
-  });
-})();
-</script>
 </body>
 </html>
