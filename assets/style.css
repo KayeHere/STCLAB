@@ -741,7 +741,7 @@ ul.names li::before {
 
 .alumni {
   display: grid;
-  grid-template-columns: repeat(3, 180px);   /* same photo size as current members */
+  grid-template-columns: repeat(4, 180px);   /* same photo size as current members */
   justify-content: start;
   gap: 26px 22px;
   margin: 26px 0 8px;
@@ -905,6 +905,10 @@ ol.pubs a:hover {
 .site-footer p { margin: 4px 0; }
 
 /* ---------- responsive ---------- */
+
+@media (max-width: 880px) {
+  .alumni { grid-template-columns: repeat(3, 180px); }
+}
 
 @media (max-width: 640px) {
   .hero { padding: 44px 0 0; }
