@@ -741,10 +741,10 @@ ul.names li::before {
 
 .alumni {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(132px, 1fr));
+  grid-template-columns: repeat(3, 180px);   /* same photo size as current members */
+  justify-content: start;
   gap: 26px 22px;
   margin: 26px 0 8px;
-  max-width: 68ch;
 }
 
 .alum {
@@ -754,8 +754,8 @@ ul.names li::before {
 
 .alum img {
   display: block;
-  width: 100%;
-  aspect-ratio: 1 / 1;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
   border-radius: 6px;
   border: 1px solid var(--line);
@@ -921,4 +921,7 @@ ol.pubs a:hover {
 
   .person { grid-template-columns: 1fr; }
   .hero-fig { margin-top: 26px; }
+
+  .alumni { grid-template-columns: repeat(2, minmax(0, 180px)); }
+  .alum img { width: 100%; height: auto; aspect-ratio: 1 / 1; }
 }
