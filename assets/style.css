@@ -872,6 +872,88 @@ ul.names li::before {
 .nf-swatches i:nth-child(5) { background: var(--slate); }
 .nf-swatches i:nth-child(6) { background: var(--slate2); }
 
+/* style toggle: Classic (photos) / Neofetch (ASCII cards) */
+
+.people-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 24px;
+  margin-bottom: 20px;
+}
+
+.people-head h1 { margin-bottom: 0; }
+
+.view-toggle {
+  display: inline-flex;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.view-toggle button {
+  font-family: var(--mono);
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  padding: 7px 14px;
+  border: 0;
+  background: var(--bg-soft);
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.view-toggle button + button { border-left: 1px solid var(--line); }
+.view-toggle button:hover { color: var(--ink); }
+
+.view-toggle button[aria-pressed="true"] {
+  background: var(--red);
+  color: var(--btn-fg);
+}
+
+.nf-classic { display: none; }
+
+[data-people="classic"] .nf {
+  grid-template-columns: 180px minmax(0, 1fr);
+  padding: 0;
+  margin-bottom: 40px;
+  background: none;
+  border: 0;
+  border-radius: 0;
+}
+
+[data-people="classic"] .nf-art { width: 180px; }
+
+[data-people="classic"] .nf-ascii,
+[data-people="classic"] .nf-host,
+[data-people="classic"] .nf-rule,
+[data-people="classic"] .nf-rows,
+[data-people="classic"] .nf-swatches { display: none; }
+
+[data-people="classic"] .nf-art img {
+  opacity: 1;
+  border: 1px solid var(--line);
+  background: var(--bg-soft);
+}
+
+[data-people="classic"] .nf-title {
+  margin-bottom: 8px;
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.12rem;
+  color: var(--ink);
+}
+
+[data-people="classic"] .nf-classic { display: block; }
+[data-people="classic"] .nf-info > .role { margin: -4px 0 12px; }
+
+[data-people="classic"] .alum .nf-art {
+  padding: 0;
+  background: none;
+  border: 0;
+}
+
 /* alumni: ASCII tiles, name only */
 
 .alumni {
@@ -1068,4 +1150,5 @@ ol.pubs a:hover {
   .alumni { grid-template-columns: repeat(2, minmax(0, 180px)); }
   .nf { grid-template-columns: minmax(0, 1fr); gap: 22px; padding: 18px; }
   .nf-art { width: min(252px, 100%); }
+  [data-people="classic"] .nf { grid-template-columns: minmax(0, 1fr); }
 }

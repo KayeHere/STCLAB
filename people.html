@@ -18,6 +18,13 @@
 <meta property="og:image:alt" content="Speech, Tinnitus, and Cognition Lab, San Diego State University">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="assets/style.css">
+<script>
+  (function () {
+    var v = 'neofetch';
+    try { v = localStorage.getItem('people-view') || v; } catch (e) {}
+    document.documentElement.setAttribute('data-people', v);
+  })();
+</script>
 </head>
 <body>
 
@@ -47,7 +54,13 @@
 <main id="main">
   <div class="wrap">
 
-    <h1>People</h1>
+    <div class="people-head">
+      <h1>People</h1>
+      <div class="view-toggle" role="group" aria-label="Page style">
+        <button type="button" data-view="classic">Classic</button>
+        <button type="button" data-view="neofetch">Neofetch</button>
+      </div>
+    </div>
 
     <article class="nf">
       <div class="nf-art">
@@ -91,6 +104,7 @@ h6qw6dd9h9d9hh6kS]S94pqu2wkPEYuna6h6k3*(2UAK4EPdV9PxnxhKKPjxjm@@XPwE]yxa</pre>
       </div>
       <div class="nf-info">
         <h3 class="nf-title">Xianhui (Kaye) Wang, Ph.D.<span class="nf-host" aria-hidden="true">@stc-lab</span></h3>
+        <p class="role nf-classic">Principal Investigator &middot; Assistant Professor</p>
         <p class="nf-rule" aria-hidden="true"></p>
         <dl class="nf-rows">
           <div><dt>Role</dt><dd>Principal Investigator</dd></div>
@@ -110,6 +124,7 @@ h6qw6dd9h9d9hh6kS]S94pqu2wkPEYuna6h6k3*(2UAK4EPdV9PxnxhKKPjxjm@@XPwE]yxa</pre>
           University, an M.Sc. in Audiological Science from University College
           London, and a B.Eng. in Biomedical Engineering from Capital Medical
           University.</p>
+        <p class="nf-classic"><a href="mailto:kwang5@sdsu.edu">kwang5@sdsu.edu</a></p>
         <span class="nf-swatches" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>
       </div>
     </article>
@@ -158,6 +173,7 @@ h6qw6dd9h9d9hh6kS]S94pqu2wkPEYuna6h6k3*(2UAK4EPdV9PxnxhKKPjxjm@@XPwE]yxa</pre>
       </div>
       <div class="nf-info">
         <h3 class="nf-title">Jaylene Chi<span class="nf-host" aria-hidden="true">@stc-lab</span></h3>
+        <p class="role nf-classic">Graduate Research Assistant</p>
         <p class="nf-rule" aria-hidden="true"></p>
         <dl class="nf-rows">
           <div><dt>Role</dt><dd>Graduate Research Assistant</dd></div>
@@ -211,6 +227,7 @@ NQ@UwexnZ|vL*L&gt;&lt;s);/7wdOpE/3HXmmB&amp;@@@@@@&amp;@@%@@%@@@@@@@%&amp;@Dp$@@
       </div>
       <div class="nf-info">
         <h3 class="nf-title">Chloe Verove<span class="nf-host" aria-hidden="true">@stc-lab</span></h3>
+        <p class="role nf-classic">Graduate Research Assistant</p>
         <p class="nf-rule" aria-hidden="true"></p>
         <dl class="nf-rows">
           <div><dt>Role</dt><dd>Graduate Research Assistant</dd></div>
@@ -265,6 +282,7 @@ NQ@UwexnZ|vL*L&gt;&lt;s);/7wdOpE/3HXmmB&amp;@@@@@@&amp;@@%@@%@@@@@@@%&amp;@Dp$@@
       </div>
       <div class="nf-info">
         <h3 class="nf-title">Jay Slade<span class="nf-host" aria-hidden="true">@stc-lab</span></h3>
+        <p class="role nf-classic">Graduate Research Assistant</p>
         <p class="nf-rule" aria-hidden="true"></p>
         <dl class="nf-rows">
           <div><dt>Role</dt><dd>Graduate Research Assistant</dd></div>
@@ -321,6 +339,7 @@ NQ@UwexnZ|vL*L&gt;&lt;s);/7wdOpE/3HXmmB&amp;@@@@@@&amp;@@%@@%@@@@@@@%&amp;@Dp$@@
       </div>
       <div class="nf-info">
         <h3 class="nf-title">Madison Langley<span class="nf-host" aria-hidden="true">@stc-lab</span></h3>
+        <p class="role nf-classic">Graduate Research Assistant</p>
         <p class="nf-rule" aria-hidden="true"></p>
         <dl class="nf-rows">
           <div><dt>Role</dt><dd>Graduate Research Assistant</dd></div>
@@ -376,6 +395,7 @@ NQ@UwexnZ|vL*L&gt;&lt;s);/7wdOpE/3HXmmB&amp;@@@@@@&amp;@@%@@%@@@@@@@%&amp;@Dp$@@
       </div>
       <div class="nf-info">
         <h3 class="nf-title">Jordyn Meda<span class="nf-host" aria-hidden="true">@stc-lab</span></h3>
+        <p class="role nf-classic">Undergraduate Research Assistant</p>
         <p class="nf-rule" aria-hidden="true"></p>
         <dl class="nf-rows">
           <div><dt>Role</dt><dd>Undergraduate Research Assistant</dd></div>
@@ -430,6 +450,7 @@ Xpi....................-akhVGAAOke1i&gt;........&gt;
       </div>
       <div class="nf-info">
         <h3 class="nf-title">Gyurang Nam<span class="nf-host" aria-hidden="true">@stc-lab</span></h3>
+        <p class="role nf-classic">Undergraduate Research Assistant</p>
         <p class="nf-rule" aria-hidden="true"></p>
         <dl class="nf-rows">
           <div><dt>Role</dt><dd>Undergraduate Research Assistant</dd></div>
@@ -668,6 +689,24 @@ CFiei?^|@BRH$vJ(LT%H6c?i?IbaHq?)cnSp%fsz3kSY@S
     <p><a href="mailto:SLHS_STCLab@sdsu.edu">SLHS_STCLab@sdsu.edu</a></p>
   </div>
 </footer>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var buttons = document.querySelectorAll('.view-toggle button');
+    function show(v) {
+      root.setAttribute('data-people', v);
+      buttons.forEach(function (b) {
+        b.setAttribute('aria-pressed', b.dataset.view === v ? 'true' : 'false');
+      });
+      try { localStorage.setItem('people-view', v); } catch (e) {}
+    }
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () { show(b.dataset.view); });
+    });
+    show(root.getAttribute('data-people'));
+  })();
+</script>
 
 </body>
 </html>
